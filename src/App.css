@@ -1,4 +1,15 @@
-.App {
+.jumbotron {
+  /*background-image: linear-gradient(to right bottom, #113399, #001155);*/
+  background-color: #113399;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.page-button-row {
+  max-width: 100%;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +47,4 @@
     transform: rotate(360deg);
   }
 }
+*/

@@ -3,14 +3,11 @@ import './App.css';
 import React, { Component } from 'react';
 import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
-import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <button type="button" className="btn btn-secondary">flesto</button>
-        <Button color="primary">guesto</Button>
         <div className="App">
           <Main />
         </div>
