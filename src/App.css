@@ -9,6 +9,20 @@
   max-width: 100%;
 }
 
+.nav {
+  background-color: #113366;
+}
+.nav-item {
+  margin: auto;
+  font-size: larger;
+}
+.nav-item .nav-link {
+  color: whitesmoke;
+}
+.nav-item .nav-link:hover, .nav-item .nav-link:focus {
+  color: whitesmoke;
+}
+
 /*.App {
   text-align: center;
 }

@@ -4,12 +4,12 @@ import { Stagger, FadeTransform } from 'react-animation-components';
 
 const PAGES = [
     {
-        name: "Home",
-        color: "primary"
-    },
-    {
         name: "About Me",
         color: "success"
+    },
+    {
+        name: "My Skills",
+        color: "warning"
     },
     {
         name: "Example Website",
@@ -17,7 +17,7 @@ const PAGES = [
     },
     {
         name: "Contact",
-        color: "warning"
+        color: "primary"
     }
 ]
 
