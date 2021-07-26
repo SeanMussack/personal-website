@@ -22,10 +22,16 @@ const PAGES = [
 ]
 
 class RenderPageLinks extends Component {
+    constructor(props) {
+        super(props);
+        this.props = {
+            pages: null
+        }
+    }
     render() {
         return (
             <Stagger in className="stagger mt-3">
-                {PAGES.map((page) => {
+                {this.props.pages.map((page) => {
                     return (
                         <FadeTransform
                             in
@@ -35,11 +41,15 @@ class RenderPageLinks extends Component {
                                 exitTransform: "translateX(-20%)"
                             }
                         }>
-                            <Row className="page-button-row my-1">
-                                <Button color={page.color} className={"page-button my-4 col-8 col-md-4 offset-2 offset-md-4"}>
-                                    {page.name}
+                            <div className="page-button-row row-flex">
+                                <Button color={page.color} className={"page-button col-8 col-md-4 offset-2 offset-md-4"}>
+                                    <Row>
+                                        <Col className="col-4 offset-0"><i className={"fas fa-sm fa-" + page.icon} aria-hidden="true"></i></Col>
+                                        <Col className="col-4 offset-0">{page.name}</Col>
+                                        <Col className="col-4 offset-0"><i className={"fas fa-lg fa-angle-right"} aria-hidden="true"></i></Col>
+                                    </Row>
                                 </Button>
-                            </Row>
+                            </div>
                         </FadeTransform>
                     );
                 })}
@@ -49,9 +59,15 @@ class RenderPageLinks extends Component {
 }
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.props = {
+            pages: null
+        }
+    }
     render() {
         return (
-            <RenderPageLinks className="render-page-links"/>
+            <RenderPageLinks pages={this.props.pages}/>
         );
     }
 }

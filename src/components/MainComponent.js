@@ -6,16 +6,43 @@ import { Jumbotron } from 'reactstrap';
 import Home from './Home.js';
 import Header from './HeaderComponent.js';
 
+const PAGES = [
+    {
+        name: "Home",
+        href: "home",
+        color: "secondary",
+        icon: "home"
+    },
+    {
+        name: "About",
+        href: "about",
+        color: "success",
+        icon: "user"
+    },
+    {
+        name: "Projects",
+        href: "projects",
+        color: "primary",
+        icon: "at"
+    },
+    {
+        name: "Contact",
+        href: "contact",
+        color: "danger",
+        icon: "paper-plane"
+    }
+]
+
 class Main extends Component {
     render() {
         return (
             <Fragment>
-                <Header/>
+                <Header pages={PAGES}/>
             
                 <TransitionGroup className="transition-group">
                     <CSSTransition classNames="page" timeout={0}>
                         <Switch className="switch">
-                            <Home/>
+                            <Route exact path='/' render={() => <Home pages={PAGES}/>} />
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
@@ -24,4 +51,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default withRouter(Main);

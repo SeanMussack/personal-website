@@ -1,14 +1,3 @@
-.jumbotron {
-  /*background-image: linear-gradient(to right bottom, #113399, #001155);*/
-  background-color: #113399;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.page-button-row {
-  max-width: 100%;
-}
-
 .navbar {
   background-color: #113366;
   text-align: center;
@@ -34,6 +23,14 @@
 .nav-item .nav-link:hover, .nav-item .nav-link:focus {
   color: whitesmoke;
   background-color: #113399;
+}
+
+.page-button {
+  height: 80px;
+  margin: 20px 0px;
+}
+.page-button .col {
+  font-size: x-large;
 }
 
 /*.App {
