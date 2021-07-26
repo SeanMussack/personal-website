@@ -9,18 +9,31 @@
   max-width: 100%;
 }
 
-.nav {
+.navbar {
   background-color: #113366;
+  text-align: center;
+}
+.nav {
+  width: 100%;
+}
+.avatar {
+  width: 250px;
+  border-radius: 200px;
+  border-color: #113366;
+  border-width: 10px;
 }
 .nav-item {
-  margin: auto;
+/*  margin: auto;*/
   font-size: larger;
+  padding: 10px;
 }
 .nav-item .nav-link {
   color: whitesmoke;
+  border-radius: 10px;
 }
 .nav-item .nav-link:hover, .nav-item .nav-link:focus {
   color: whitesmoke;
+  background-color: #113399;
 }
 
 /*.App {

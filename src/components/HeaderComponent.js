@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
-import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, Nav, NavItem, NavLink, Row, Container, Col } from 'reactstrap';
 
+const AVATAR_SRC = "/avatar_small.jpeg";
 const LINKS = [
     {
         name: "Home",
@@ -25,7 +26,7 @@ function RenderPageLinks() {
         <Fragment>
             {LINKS.map((link) => {
                 return (
-                    <NavItem>
+                    <NavItem className="col-6 col-sm-3 py-0">
                         <NavLink href={link.href}>
                             {link.name}
                         </NavLink>
@@ -39,11 +40,13 @@ function RenderPageLinks() {
 class Header extends Component {
     render() {
         return (
-            <Nav>
-                <Navbar className="col-12 col-md-6 offset-md-6">
+            <Navbar className="row-flex ">
+                <Col xs={0} sm={4}>
+                </Col>
+                <Nav className="col-12 col-sm-8 m-0">
                     {RenderPageLinks()}
-                </Navbar>
-            </Nav>
+                </Nav>
+            </Navbar>
         );
     }
 }
