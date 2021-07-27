@@ -9,27 +9,27 @@ import About from './About.js';
 
 const PAGES = [
     {
-        name: "Home",
-        href: "home",
-        color: "secondary",
-        icon: "home"
-    },
-    {
         name: "About",
         href: "about",
-        color: "success",
+        color: "cyan",
         icon: "user"
+    },
+    {
+        name: "Resume",
+        href: "resume",
+        color: "magenta",
+        icon: "file"
     },
     {
         name: "Projects",
         href: "projects",
-        color: "primary",
-        icon: "at"
+        color: "yellow",
+        icon: "star"
     },
     {
         name: "Contact",
         href: "contact",
-        color: "danger",
+        color: "white",
         icon: "paper-plane"
     }
 ]

@@ -25,7 +25,7 @@ class RenderPageLinks extends Component {
                             <div className="page-button-row row justify-content-center">
                                 <Link
                                     to={page.href}
-                                    className={"page-button d-inline-flex justify-content-center btn btn-" + page.color}
+                                    className={"page-button d-inline-flex justify-content-center btn color-" + page.color}
                                 >
                                     <Row className="">
                                         <Col className="col-1 offset-3"><i className={"fas fa-sm fa-" + page.icon} aria-hidden="true"></i></Col>
