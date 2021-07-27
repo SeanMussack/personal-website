@@ -1,6 +1,6 @@
 /*entire app*/
 body {
-  overflow: hidden;
+/*  overflow: hidden;//removes scrollbar*/
 }
 .App {
   background-color: #111111;
