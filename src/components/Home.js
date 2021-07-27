@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import { Col, Row, Container, Button } from 'reactstrap';
 import { Stagger, FadeTransform } from 'react-animation-components';
 
@@ -22,13 +23,16 @@ class RenderPageLinks extends Component {
                             }
                         }>
                             <div className="page-button-row row-flex">
-                                <Button color={page.color} className={"page-button col-8 col-md-4 offset-2 offset-md-4"}>
-                                    <Row>
+                                <Link
+                                    to={page.href}
+                                    className={"page-button col-8 col-md-4 offset-2 offset-md-4 btn btn-" + page.color}
+                                >
+                                    <Row className="">
                                         <Col className="col-4 offset-0"><i className={"fas fa-sm fa-" + page.icon} aria-hidden="true"></i></Col>
                                         <Col className="col-4 offset-0">{page.name}</Col>
                                         <Col className="col-4 offset-0"><i className={"fas fa-lg fa-angle-right"} aria-hidden="true"></i></Col>
                                     </Row>
-                                </Button>
+                                </Link>
                             </div>
                         </FadeTransform>
                     );

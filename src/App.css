@@ -25,6 +25,9 @@
   height: 80px;
   margin: 20px 0px;
 }
+.page-button .row {
+  transform: translateY(40%);
+}
 .page-button .col {
   font-size: x-large;
 }
