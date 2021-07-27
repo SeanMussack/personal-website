@@ -4,7 +4,8 @@ body {
 }
 .App {
   background-color: #111111;
-/*  height: 100vh;//the view height*/
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 /*navbar*/
