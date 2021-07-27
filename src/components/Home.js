@@ -22,15 +22,15 @@ class RenderPageLinks extends Component {
                                 exitTransform: "translateX(-20%)"
                             }
                         }>
-                            <div className="page-button-row row-flex">
+                            <div className="page-button-row row justify-content-center">
                                 <Link
                                     to={page.href}
-                                    className={"page-button col-8 col-md-4 offset-2 offset-md-4 btn btn-" + page.color}
+                                    className={"page-button d-inline-flex justify-content-center btn btn-" + page.color}
                                 >
                                     <Row className="">
-                                        <Col className="col-4 offset-0"><i className={"fas fa-sm fa-" + page.icon} aria-hidden="true"></i></Col>
+                                        <Col className="col-1 offset-3"><i className={"fas fa-sm fa-" + page.icon} aria-hidden="true"></i></Col>
                                         <Col className="col-4 offset-0">{page.name}</Col>
-                                        <Col className="col-4 offset-0"><i className={"fas fa-lg fa-angle-right"} aria-hidden="true"></i></Col>
+                                        <Col className="col-1 offset-0"><i className={"fas fa-lg fa-angle-right"} aria-hidden="true"></i></Col>
                                     </Row>
                                 </Link>
                             </div>
@@ -51,7 +51,9 @@ class Home extends Component {
     }
     render() {
         return (
-            <RenderPageLinks pages={this.props.pages}/>
+            <Container className="home-page-container">
+                <RenderPageLinks pages={this.props.pages}/>
+            </Container>
         );
     }
 }

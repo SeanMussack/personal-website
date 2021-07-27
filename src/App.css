@@ -21,15 +21,37 @@
 }
 
 /*home page*/
+.home-page-container {
+  margin: 60px;
+  max-width: 90%;
+}
 .page-button {
   height: 80px;
-  margin: 20px 0px;
+  margin: 40px;
+}
+.page-button:hover {
+  transform: scale3d(1.03, 1.1, 1);
 }
 .page-button .row {
-  transform: translateY(40%);
+  width: inherit;
+  transform: translateY(20%);
 }
 .page-button .col {
   font-size: x-large;
+}
+/*home page animations*/
+@media (prefers-reduced-motion: no-preference) {
+  .page-button:hover .fa-angle-right {
+    animation: Arrow-icon-hover infinite 1s linear;
+  }
+}
+@keyframes Arrow-icon-hover {
+  from {
+    transform: translateX(0vmin);
+  }
+  to {
+    transform: translateX(35vmin);
+  }
 }
 
 /*about page*/
