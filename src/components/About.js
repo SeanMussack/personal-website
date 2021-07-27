@@ -2,8 +2,8 @@ import React, {Component, Fragment} from 'react';
 import {FadeTransform, Fade, Transform} from 'react-animation-components';
 import { Col, Container, Row } from 'reactstrap';
 
-const AVATAR_SRC = "/avatar_small.jpeg";
-const LILY_SRC = "/lily.jpg";
+const AVATAR_SRC = "/avatar_md.jpg";
+const LILY_SRC = "/lily_md.jpg";
 
 function RenderAvatar() {
     return (
@@ -18,18 +18,59 @@ function RenderAvatar() {
 }
 function RenderText() {
     return (
-        <p>Hello worlds!</p>
+        <Fragment>
+            <p>
+                <h3>Hello world!</h3>
+                <ul>
+                    <h5>
+                        Sean Mussack at a glance:
+                    </h5>
+                    <li>
+                        Location: Minneapolis, MN, USA
+                    </li>
+                    <li>
+                        Pronouns: they/them or she/her
+                    </li>
+                    <li>
+                        Pet: Lily the rabbit
+                    </li>
+                </ul>
+                <ul>
+                    <h5>
+                        Things I Love:
+                    </h5>
+                    <li>
+                        Animals
+                    </li>
+                    <li>
+                        Pixel Art
+                    </li>
+                    <li>
+                        World History
+                    </li>
+                </ul>
+            </p>
+        </Fragment>
     );
 }
 function RenderLily() {
     return (
-        <div className="d-flex justify-content-center">
-            <img 
-                className="lily"
-                src={LILY_SRC}
-                alt="My rabbit, Lily, who has white fur with black ears and eyes"
-            />
-        </div>
+        <Fragment>
+            <div className="d-none d-sm-flex justify-content-center">
+                <img 
+                    className="lily"
+                    src={LILY_SRC}
+                    alt="My rabbit, Lily, who has white fur with black ears and eyes"
+                />
+            </div>
+            <div className="d-flex d-sm-none">
+                <img
+                    className="lily position-absolute bottom-0 end-0 mb-5"
+                    src={LILY_SRC}
+                    alt="My rabbit, Lily, who has white fur with black ears and eyes"
+                />
+            </div>
+        </Fragment>
     );
 }
 

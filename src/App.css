@@ -1,15 +1,17 @@
 /*entire app*/
 body {
 /*  overflow: hidden;//removes scrollbar*/
+  max-height: fit-content;
 }
 .App {
-  background-color: #111111;
   min-height: 100vh;
-  max-height: fit-content;
+  background-color: #111111;
+  color: whitesmoke;
 }
 
 /*navbar*/
 .navbar {
+  height: 90px;
 /*  background-color: #113366;*/
   background-color: black;
   text-align: center;
@@ -90,6 +92,9 @@ body {
   .page-button:hover .fa-angle-right {
     animation: Arrow-icon-hover infinite 1s linear;
   }
+  .page-button:active {
+    animation: Page-button-on-press 1s linear;
+  }
 }
 @keyframes Arrow-icon-hover {
   from {
@@ -99,14 +104,24 @@ body {
     transform: translateX(20vw);
   }
 }
+@keyframes Page-button-on-press {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(150vw);
+  }
+}
 
 /*about page*/
 .about-page-container {
   text-align: center;
   padding-top: 30px;
+  overflow: hidden;
+  max-height: calc(100vh - 90px);
 }
 .avatar, .lily {
-  border-radius: 40vh;
+  border-radius: 200px;
 }
 .avatar {
   width: 30vh;
@@ -115,8 +130,17 @@ body {
   border-style: solid;
 }
 .about-page-container p {
-  padding: 15vmin 0vmin;
-  font-size: larger;
+  padding: 10vh 0vmin;
+}
+.about-page-container h3 {
+  font-variant: small-caps;
+  margin-bottom: 5vh;
+}
+.about-page-container h5 {
+  font-weight: bold;
+}
+.about-page-container ul {
+  text-align: left;
 }
 .lily {
   width: 20vh;
@@ -126,8 +150,11 @@ body {
   .avatar {
     animation: Avatar-float-around infinite 15s ease-in-out;
   }
-  .lily {
+  .d-sm-flex .lily {
     animation: Lily-float-around infinite 20s ease-in-out;
+  }
+  .d-sm-none .lily {
+    animation: Lily-spin infinite 20s linear;
   }
 }
 @keyframes Avatar-float-around {
@@ -150,6 +177,14 @@ body {
   }
   to {
     transform: translateY(0vw);
+  }
+}
+@keyframes Lily-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
