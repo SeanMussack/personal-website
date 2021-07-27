@@ -2,8 +2,6 @@ import React, {Component, Fragment} from 'react';
 import { Navbar, Nav, NavItem, Row, Container, Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
-const AVATAR_SRC = "/avatar_small.jpeg";
-
 function RenderPageLinks(pages) {
     return (
         <Fragment>
