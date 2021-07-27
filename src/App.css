@@ -1,15 +1,10 @@
+/*navbar*/
 .navbar {
   background-color: #113366;
   text-align: center;
 }
 .nav {
   width: 100%;
-}
-.avatar {
-  width: 250px;
-  border-radius: 200px;
-  border-color: #113366;
-  border-width: 10px;
 }
 .nav-item {
 /*  margin: auto;*/
@@ -25,12 +20,69 @@
   background-color: #113399;
 }
 
+/*home page*/
 .page-button {
   height: 80px;
   margin: 20px 0px;
 }
 .page-button .col {
   font-size: x-large;
+}
+
+/*about page*/
+.about-page-container {
+  text-align: center;
+  padding-top: 30px;
+}
+.avatar, .lily {
+  border-radius: 40vh;
+}
+.avatar {
+  width: 30vh;
+  border-color: #113366;
+  border-width: 0px;
+  border-style: solid;
+}
+.about-page-container p {
+  padding: 15vmin 0vmin;
+  font-size: larger;
+}
+.lily {
+  width: 20vh;
+}
+/*about page animations*/
+@media (prefers-reduced-motion: no-preference) {
+  .avatar {
+    animation: Avatar-float-around infinite 15s ease-in-out;
+  }
+  .lily {
+    animation: Lily-float-around infinite 20s ease-in-out;
+  }
+}
+@keyframes Avatar-float-around {
+  from {
+    transform: translate(0%, -8%);
+  }
+  50% {
+    transform: translate(0%, 8%);
+  }
+  to {
+    transform: translate(0%, -8%);
+  }
+}
+@keyframes Lily-float-around {
+  from {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(16%);
+  }
+  75% {
+    transform: translateY(-16%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 /*.App {

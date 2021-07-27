@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import { Navbar, Nav, NavItem, NavLink, Row, Container, Col } from 'reactstrap';
+import { Navbar, Nav, NavItem, Row, Container, Col } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 const AVATAR_SRC = "/avatar_small.jpeg";
 
@@ -9,7 +10,10 @@ function RenderPageLinks(pages) {
             {pages.map((link) => {
                 return (
                     <NavItem className="col-6 col-sm-3 py-0">
-                        <NavLink href={link.href}>
+                        <NavLink 
+                            to={link.href}
+                            className="nav-link"
+                        >
                             {link.name}
                         </NavLink>
                     </NavItem>

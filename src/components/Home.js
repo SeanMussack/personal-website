@@ -2,25 +2,6 @@ import React, {Component} from 'react';
 import { Col, Row, Container, Button } from 'reactstrap';
 import { Stagger, FadeTransform } from 'react-animation-components';
 
-const PAGES = [
-    {
-        name: "About Me",
-        color: "success"
-    },
-    {
-        name: "My Skills",
-        color: "warning"
-    },
-    {
-        name: "Example Website",
-        color: "danger"
-    },
-    {
-        name: "Contact",
-        color: "primary"
-    }
-]
-
 class RenderPageLinks extends Component {
     constructor(props) {
         super(props);
@@ -34,7 +15,6 @@ class RenderPageLinks extends Component {
                 {this.props.pages.map((page) => {
                     return (
                         <FadeTransform
-                            in
                             key={page.name}
                             transformProps={{
                                 enterTransform: "translateX(0px)",
