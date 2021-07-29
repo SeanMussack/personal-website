@@ -6,6 +6,7 @@ import { Jumbotron } from 'reactstrap';
 import Header from './HeaderComponent.js';
 import Home from './Home.js';
 import About from './About.js';
+import Resume from './Resume.js';
 
 const PAGES = [
     {
@@ -44,10 +45,11 @@ class Main extends Component {
                 <Header pages={PAGES}/>
             
                 <TransitionGroup className="transition-group">
-                    <CSSTransition key={this.props.location.key} classNames="page" timeout={0}>
+                    <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
                         <Switch className="switch">
                             <Route path='/home' render={() => <Home pages={PAGES}/>} />
                             <Route path='/about' component={About}/>
+                            <Route path='/resume' component={Resume}/>
                             <Redirect to='/home'/>
                         </Switch>
                     </CSSTransition>

@@ -2,6 +2,7 @@
 body {
 /*  overflow: hidden;//removes scrollbar*/
   max-height: fit-content;
+  overflow: hidden;
 }
 .App {
   min-height: 100vh;
@@ -117,7 +118,6 @@ body {
 .about-page-container {
   text-align: center;
   padding-top: 30px;
-  overflow: hidden;
   max-height: calc(100vh - 90px);
 }
 .avatar, .lily {
@@ -185,6 +185,49 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/*resume page*/
+.resume-container {
+  padding: 0px;
+}
+.resume-left-col {
+  text-align: center;
+  padding: 15vw 0vw;
+}
+.resume-container .download-button,
+.resume-container .download-button:hover,
+.resume-container .download-button:active {
+  background-color: yellow;
+  color: black;
+  border: 0px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: larger;
+}
+.resume-container .fas {
+  margin-right: 10px;
+}
+.resume-img {
+  max-height: 75vh;
+  max-width: inherit;
+}
+/*resume page animations*/
+@media (prefers-reduced-motion: no-preference) {
+  .download-button:hover {
+    animation: Download-button-hover infinite .3s ease-in-out;
+  }
+}
+@keyframes Download-button-hover {
+  from {
+    transform: translateY(0vh);
+  }
+  50% {
+    transform: translateY(-1vh);
+  }
+  to {
+    transform: translateY(0vh);
   }
 }
 
