@@ -10,7 +10,7 @@ body {
   color: whitesmoke;
 }
 
-/*navbar*/
+/*header*/
 .navbar {
   height: 90px;
 /*  background-color: #113366;*/
@@ -26,10 +26,19 @@ body {
 .nav-item .nav-link {
   color: whitesmoke;
   border-radius: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.nav-item .nav-link:hover, .nav-item .nav-link:focus {
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus,
+.nav-item .nav-link-active {
   color: whitesmoke;
   background-color: #222222;
+}
+.header-arrow {
+  position: absolute;
+  transform: translate3d(-6px, -7px, 0px);
+  color: #222222;
 }
 /*header animations*/
 @media (prefers-reduced-motion: no-preference) {

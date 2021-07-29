@@ -3,13 +3,6 @@ import { Navbar, Nav, NavItem, Row, Container, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const LOGO_SRC = "/sean-mussack-initials-final.svg"
-/*const HOME_LINK = 
-{
-    name: "Home",
-    href: "home",
-    color: "white",
-    icon: "home"
-}*/
 
 function RenderLogo() {
     return (
@@ -22,15 +15,36 @@ function RenderLogo() {
         </Link>
     )
 }
+function isCurrentPage(href) {
+    const currentPathName = window.location.pathname;
+    const isCurrentPageBool = (currentPathName == "/" + href);
+    console.log("currentPathName: " + currentPathName);
+    console.log("href: " + href);
+    console.log("isCurrentPageBool: " + isCurrentPageBool)
+    return (isCurrentPageBool);
+}
+function RenderArrow() {
+    return (
+        <i
+            className="header-arrow fas fa-lg fa-caret-down"
+        />
+    );
+}
 function RenderLink(link) {
     return (
         <NavItem className="col-6 col-sm-3">
             <Link 
                 to={link.href}
-                className="nav-link py-1 py-sm-3"
+                className={"nav-link py-1 py-sm-3" +
+                    (isCurrentPage(link.href) ? " nav-link-active" : "")
+                }
             >
                 {link.name}
             </Link>
+            {isCurrentPage(link.href)
+                ? <RenderArrow/>
+                : <Fragment/>
+            }
         </NavItem>
     );
 }
