@@ -211,8 +211,8 @@ body {
 .resume-img {
   max-height: 75vh;
   max-width: 90vw;
-  width: -moz-available;
-  width: -webkit-fill-available;
+  max-width: -moz-available;
+  max-width: -webkit-fill-available;
 }
 /*resume page animations*/
 @media (prefers-reduced-motion: no-preference) {
