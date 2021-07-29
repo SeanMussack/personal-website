@@ -253,6 +253,12 @@ body {
 .contact-container .fab {
   margin-right: 3vh;
 }
+.contact-container a {
+  color: cyan;
+}
+.contact-container a:hover {
+  color: turquoise;
+}
 
 /*.App {
   text-align: center;
