@@ -37,7 +37,7 @@ class Resume extends Component {
                             </p>
                         </FadeTransform>
                     </Col>
-                    <Col xs={12} sm={6} className="px-md-5 mt-sm-5">
+                    <Col xs={12} sm={6} className="px-4 px-md-5 mt-sm-5">
                         <FadeTransform
                             in
                             key={"About"}
