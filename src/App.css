@@ -210,7 +210,7 @@ body {
 }
 .resume-img {
   max-height: 75vh;
-  max-width: inherit;
+  max-width: 90vw;
 }
 /*resume page animations*/
 @media (prefers-reduced-motion: no-preference) {
