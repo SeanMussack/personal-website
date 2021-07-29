@@ -12,7 +12,7 @@ function RenderDownloadButton() {
             download
             className="btn btn-warning download-button"
         >
-            <i className="fas fa-download"/>Download
+            <i className="fas fa-download" aria-hidden="true"/>Download
         </a>
     );
 }

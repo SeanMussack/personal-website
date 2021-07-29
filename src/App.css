@@ -69,7 +69,7 @@ body {
   font-weight: bolder;
 }
 .page-button-row .color-white {
-  background-color: white;
+  background-color: whitesmoke;
 }
 .page-button-row .color-cyan {
   background-color: cyan;
@@ -229,6 +229,29 @@ body {
   to {
     transform: translateY(0vh);
   }
+}
+
+/*contact page*/
+.contact-container h2 {
+  text-align: center;
+  font-variant: small-caps;
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 10vh;
+  margin-right: 10vw;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  padding-bottom: 2vh;
+}
+.contact-container ul {
+  font-size: larger;
+  list-style-type: none;
+}
+.contact-container li {
+  margin-top: 5vh;
+}
+.contact-container .fas,
+.contact-container .fab {
+  margin-right: 3vh;
 }
 
 /*.App {
