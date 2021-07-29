@@ -12,7 +12,7 @@ class RenderPageLinks extends Component {
     }
     render() {
         return (
-            <Stagger in className="stagger mt-3">
+            <Stagger in className="stagger">
                 {this.props.pages.map((page) => {
                     return (
                         <FadeTransform
