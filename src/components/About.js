@@ -23,22 +23,25 @@ function RenderText() {
                 <h3>Hello world!</h3>
                 <ul>
                     <h5>
-                        Sean Mussack at a glance:
+                        Sean Mussack <span className="text-nowrap">at a glance:</span>
                     </h5>
                     <li>
-                        Location: Minneapolis, MN, USA
+                        <b>Location:</b> <span className="text-nowrap">Minneapolis, MN, USA</span>
                     </li>
                     <li>
-                        Pronouns: they/them or she/her
+                        <b>Pronouns:</b> <span className="text-nowrap">they/them or she/her</span>
                     </li>
                     <li>
-                        Pet: Lily the rabbit
+                        <b>Pet:</b> <span className="text-nowrap">Lily the rabbit</span>
                     </li>
                 </ul>
                 <ul>
                     <h5>
                         Things I Love:
                     </h5>
+                    <li>
+                        Coding
+                    </li>
                     <li>
                         Animals
                     </li>
