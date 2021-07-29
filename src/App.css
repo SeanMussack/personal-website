@@ -211,6 +211,7 @@ body {
 .resume-img {
   max-height: 75vh;
   max-width: 90vw;
+  margin-inline-start: 5vw;
 }
 /*resume page animations*/
 @media (prefers-reduced-motion: no-preference) {
