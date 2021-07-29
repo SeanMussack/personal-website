@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import { Navbar, Nav, NavItem, Row, Container, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Fade } from 'react-animation-components';
 
 const LOGO_SRC = "/sean-mussack-initials-final.svg"
 
@@ -25,9 +26,11 @@ function isCurrentPage(href) {
 }
 function RenderArrow() {
     return (
-        <i
-            className="header-arrow fas fa-lg fa-caret-down"
-        />
+        <Fade in duration="200">
+            <i
+                className="header-arrow fas fa-lg fa-caret-down"
+            />
+        </Fade>
     );
 }
 function RenderLink(link) {
