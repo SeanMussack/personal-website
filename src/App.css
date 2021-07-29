@@ -58,7 +58,7 @@ body {
 }
 .page-button {
   height: 80px;
-  margin: 5vh;
+  margin: auto;
 }
 .page-button:hover {
   transform: scale3d(1.03, 1.1, 1);
