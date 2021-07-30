@@ -132,13 +132,13 @@ body {
   border-radius: 200px;
 }
 .avatar {
-  width: 30vh;
+  height: 30vh;
   border-color: #113366;
   border-width: 0px;
   border-style: solid;
 }
 .about-page-container p {
-  padding: 8vh 0vmin;
+  padding: 4vh 0vmin;
 }
 .about-page-container h3 {
   font-variant: small-caps;
@@ -153,9 +153,13 @@ body {
 .lily {
   width: 20vh;
 }
+.d-sm-none .lily {
+  position: fixed;
+  bottom: 10px;
+}
 /*about page animations*/
 @media (prefers-reduced-motion: no-preference) {
-  .avatar {
+  .d-lg-flex .avatar {
     animation: Avatar-float-around infinite 15s ease-in-out;
   }
   .d-sm-flex .lily {
@@ -294,7 +298,7 @@ body {
 }
 @media (prefers-reduced-motion: no-preference) {
   .project:hover .jurassic-park-img {
-    animation: Logo-wiggle infinite .3s ease-out;
+    animation: Logo-wiggle infinite .5s linear;
   }
   .project:hover .pixtronauts-img {
     animation: Lily-spin infinite 5s linear;
@@ -329,43 +333,3 @@ body {
 .contact-container a:hover {
   color: turquoise;
 }
-
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/

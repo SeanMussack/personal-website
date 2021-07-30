@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Row, Container, Button } from 'reactstrap';
+import { Col, Row, Container } from 'reactstrap';
 import { Stagger, FadeTransform } from 'react-animation-components';
 
 class RenderPageLinks extends Component {

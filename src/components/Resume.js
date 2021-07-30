@@ -1,6 +1,6 @@
-import {Component} from 'react';
-import {Container, Row, Col} from 'reactstrap';
-import {FadeTransform} from 'react-animation-components';
+import { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import { FadeTransform } from 'react-animation-components';
 
 const RESUME_JPG_SRC = "/Sean Mussack's resume-1.jpg"
 const RESUME_PDF_SRC = "/Sean Mussack's resume.pdf";

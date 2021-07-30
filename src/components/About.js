@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {FadeTransform, Fade, Transform} from 'react-animation-components';
+import {FadeTransform, Fade} from 'react-animation-components';
 import { Col, Container, Row } from 'reactstrap';
 
 const AVATAR_SRC = "/avatar_md.jpg";
@@ -7,13 +7,22 @@ const LILY_SRC = "/lily_md.jpg";
 
 function RenderAvatar() {
     return (
-        <div className="d-flex justify-content-center">
-            <img 
-                className="avatar"
-                src={AVATAR_SRC}
-                alt="My avatar"
-            />
-        </div>
+        <Fragment>
+            <div className="justify-content-center d-flex d-lg-none">
+                <img 
+                    className="avatar"
+                    src={AVATAR_SRC}
+                    alt="My avatar"
+                />
+            </div>
+            <div className="justify-content-center d-none d-lg-flex">
+                <img 
+                    className="avatar"
+                    src={AVATAR_SRC}
+                    alt="My avatar"
+                />
+            </div>
+        </Fragment>
     );
 }
 function RenderText() {
@@ -82,7 +91,7 @@ class About extends Component {
         return (
             <Container fluid={true} className="about-page-container">
                 <Row>
-                    <Col xs={12} sm={3} className="offset-sm-1">
+                    <Col xs={12} lg={3} className="offset-lg-1">
                         <FadeTransform
                             in
                             key={"About"}
@@ -94,7 +103,7 @@ class About extends Component {
                             <RenderAvatar/>
                         </FadeTransform>
                     </Col>
-                    <Col xs={12} sm={4}>
+                    <Col xs={12} md={6} lg={4} className="offset-md-1 offset-lg-0">
                         <Fade in>
                             <RenderText/>
                         </Fade>

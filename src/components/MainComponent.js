@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Jumbotron } from 'reactstrap';
 
 import Header from './HeaderComponent.js';
 import Home from './Home.js';

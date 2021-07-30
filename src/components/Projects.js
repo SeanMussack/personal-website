@@ -6,7 +6,7 @@ const JURASSICPROJECT = {
     name: "Jurassic Park",
     color: "yellow",
     href: "https://jurassic-park-reactstrap.netlify.app/",
-    text: "Made with React and Bootstrap. The amusement park from the original Jurassic Park movie comes to life as a modern mobile-first single-page app.",
+    text: "Made with React and Bootstrap, the amusement park from the original Jurassic Park movie comes to life as a modern mobile-first single-page app.",
     isPicOnLeft: true,
     imgSrc: "/Jurassic_Park_logo_no_words.png",
     imgWidth: "150px",

@@ -14,6 +14,7 @@ class Contact extends Component {
                                 <li>
                                     <i className="fas fa-lg fa-envelope" aria-hidden="true"/>
                                     <a href="mailto:seanmussack@gmail.com">seanmussack@gmail.com</a>
+                                    <span> (preferred)</span>
                                 </li>
                                 <li>
                                     <i className="fas fa-lg fa-phone" aria-hidden="true"/>
