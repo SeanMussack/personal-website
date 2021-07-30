@@ -37,14 +37,10 @@ const PAGES = [
 ]
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <Fragment>
                 <Header pages={PAGES}/>
-            
                 <TransitionGroup className="transition-group">
                     <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
                         <Switch className="switch">

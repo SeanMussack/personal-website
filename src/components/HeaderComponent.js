@@ -18,10 +18,7 @@ function RenderLogo() {
 }
 function isCurrentPage(href) {
     const currentPathName = window.location.pathname;
-    const isCurrentPageBool = (currentPathName == "/" + href);
-    console.log("currentPathName: " + currentPathName);
-    console.log("href: " + href);
-    console.log("isCurrentPageBool: " + isCurrentPageBool)
+    const isCurrentPageBool = (currentPathName === "/" + href);
     return (isCurrentPageBool);
 }
 function RenderArrow() {
@@ -35,7 +32,10 @@ function RenderArrow() {
 }
 function RenderLink(link) {
     return (
-        <NavItem className="col-6 col-sm-3">
+        <NavItem 
+            key={link.name}
+            className="col-6 col-sm-3"
+        >
             <Link 
                 to={link.href}
                 className={"nav-link py-1 py-sm-3" +
@@ -64,11 +64,8 @@ function RenderPageLinks(pages) {
 }
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.props = {
-            pages: null
-        }
+    static defaultProps = {
+        pages: null
     }
     render() {
         return (

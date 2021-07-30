@@ -27,42 +27,40 @@ function RenderAvatar() {
 }
 function RenderText() {
     return (
-        <Fragment>
-            <p>
-                <h3>Hello world!</h3>
-                <ul>
-                    <h5>
-                        Sean Mussack <span className="text-nowrap">at a glance:</span>
-                    </h5>
-                    <li>
-                        <b>Location:</b> <span className="text-nowrap">Minneapolis, MN, USA</span>
-                    </li>
-                    <li>
-                        <b>Pronouns:</b> <span className="text-nowrap">they/them or she/her</span>
-                    </li>
-                    <li>
-                        <b>Pet:</b> <span className="text-nowrap">Lily the rabbit</span>
-                    </li>
-                </ul>
-                <ul>
-                    <h5>
-                        Things I Love:
-                    </h5>
-                    <li>
-                        Coding
-                    </li>
-                    <li>
-                        Animals
-                    </li>
-                    <li>
-                        Pixel Art
-                    </li>
-                    <li>
-                        World History
-                    </li>
-                </ul>
-            </p>
-        </Fragment>
+        <div className="about-text">
+            <h3>Hello world!</h3>
+            <ul>
+                <h5>
+                    Sean Mussack <span className="text-nowrap">at a glance:</span>
+                </h5>
+                <li>
+                    <b>Location:</b> <span className="text-nowrap">Minneapolis, MN, USA</span>
+                </li>
+                <li>
+                    <b>Pronouns:</b> <span className="text-nowrap">they/them or she/her</span>
+                </li>
+                <li>
+                    <b>Pet:</b> <span className="text-nowrap">Lily the rabbit</span>
+                </li>
+            </ul>
+            <ul>
+                <h5>
+                    Things I Love:
+                </h5>
+                <li>
+                    Coding
+                </li>
+                <li>
+                    Animals
+                </li>
+                <li>
+                    Pixel Art
+                </li>
+                <li>
+                    World History
+                </li>
+            </ul>
+        </div>
     );
 }
 function RenderLily() {
