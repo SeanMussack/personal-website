@@ -241,6 +241,66 @@ body {
   }
 }
 
+/*projects page*/
+.projects-container {
+  margin: 0px;
+}
+.project {
+  height: 250px;
+  width: calc(100% - 5vw);
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  border: 3px solid grey;
+  border-radius: 40px;
+  background-color: #222222;
+  color: whitesmoke;
+}
+.projects-container a:link {
+ text-decoration: none; 
+}
+.project-cyan {
+  border-color: cyan;
+}
+.project-cyan h4 {
+  color: cyan;
+}
+.project-yellow {
+  border-color: yellow;
+}
+.project-yellow h4 {
+  color: yellow;
+}
+.project:hover {
+  transform: scale3d(1.05, 1.05, 1);
+}
+.project h4 {
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 15px;
+}
+.project-text {
+  margin: 15px;
+}
+.project .d-block {
+  font-size: medium;
+  margin-top: -3px;
+}
+.project .d-sm-block {
+  font-size: large;
+}
+.pixtronauts-img {
+  position: relative;
+  top: 25px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project:hover .jurassic-park-img {
+    animation: Logo-wiggle infinite .3s ease-out;
+  }
+  .project:hover .pixtronauts-img {
+    animation: Lily-spin infinite 5s linear;
+  }
+}
+
 /*contact page*/
 .contact-container h2 {
   text-align: center;

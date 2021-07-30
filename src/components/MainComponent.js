@@ -8,6 +8,7 @@ import Home from './Home.js';
 import About from './About.js';
 import Resume from './Resume.js';
 import Contact from './Contact.js';
+import Projects from './Projects.js';
 
 const PAGES = [
     {
@@ -52,6 +53,7 @@ class Main extends Component {
                             <Route path='/about' component={About}/>
                             <Route path='/resume' component={Resume}/>
                             <Route path='/contact' component={Contact}/>
+                            <Route path='/projects' component={Projects}/>
                             <Redirect to='/home'/>
                         </Switch>
                     </CSSTransition>
