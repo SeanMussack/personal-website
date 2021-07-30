@@ -282,6 +282,9 @@ body {
   font-variant: small-caps;
   margin-top: 15px;
 }
+.project .project-col {
+  padding: 0px;
+}
 .project-text {
   margin: 15px;
 }

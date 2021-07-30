@@ -30,7 +30,7 @@ function RenderProject(proj) {
     return (
         <a href={proj.href}>
             <div
-                className={"project my-5 my-sm-2 my-md-5 project-" + proj.color}
+                className={"project my-4 my-lg-5 project-" + proj.color}
             >
                 <h4>{proj.name}</h4>
                 <Row>
