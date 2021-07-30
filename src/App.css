@@ -1,11 +1,12 @@
 /*entire app*/
 body {
-/*  overflow: hidden;//removes scrollbar*/
   max-height: fit-content;
   overflow: hidden;
 }
 .App {
   min-height: 100vh;
+  max-height: fit-content;
+  max-width: fit-content;
   background-color: #111111;
   color: whitesmoke;
 }
@@ -13,7 +14,6 @@ body {
 /*header*/
 .navbar {
   height: 90px;
-/*  background-color: #113366;*/
   background-color: black;
   text-align: center;
 }
