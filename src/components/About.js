@@ -87,7 +87,7 @@ function RenderLily() {
 class About extends Component {
     render() {
         return (
-            <Container fluid={true} className="about-page-container">
+            <Container className="about-page-container">
                 <Row>
                     <Col xs={12} lg={3} className="offset-lg-1">
                         <FadeTransform

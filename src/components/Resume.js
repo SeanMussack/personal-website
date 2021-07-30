@@ -19,7 +19,7 @@ function RenderDownloadButton() {
 class Resume extends Component {
     render() {
         return (
-            <Container fluid={true} className="resume-container">
+            <Container className="resume-container">
                 <Row>
                     <Col xs={12} sm={6} className="resume-left-col">
                         <FadeTransform
