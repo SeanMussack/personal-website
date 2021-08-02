@@ -203,7 +203,7 @@ html,body {
 /*resume page*/
 .resume-left-col {
   text-align: center;
-  padding: 15vw 0vw 0vw 0vw;
+  padding: 15vw 0vw 3vw 0vw;
 }
 .resume-container .download-button,
 .resume-container .download-button:hover,
