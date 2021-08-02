@@ -59,7 +59,7 @@ function RenderProject(proj) {
 class Projects extends Component {
     render() {
         return (
-            <Container className="projects-container">
+            <Container fluid={true} className="projects-container">
                 <Row>
                     <Col xs={12} lg={6}>
                         <FadeTransform
