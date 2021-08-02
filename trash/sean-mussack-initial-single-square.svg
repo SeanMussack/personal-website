@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150px"
+   height="150px"
+   viewBox="0 0 150 150"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="sean-mussack-initial-single-square.svg">
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.4133333"
+     inkscape:cx="75"
+     inkscape:cy="75"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g11"
+       transform="translate(10,10)">
+      <rect
+         style="stroke-width:1.12850368"
+         y="-10"
+         x="-10"
+         height="150"
+         width="150"
+         id="rect8" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4567"
+         d="m 65.000166,1.937e-4 c -15.218529,0 -29.14745,2.8369683 -40.929801,8.728149 C 12.288138,14.619452 2.539e-4,25.415929 0,42.181082 v 5.29e-4 c 0,16.76545 12.288016,27.562074 24.070365,33.453255 11.782351,5.89117 25.711272,8.728667 40.929801,8.728667 8.273057,0 15.642349,1.574007 20.671607,3.455086 -5.29e-4,1.9e-4 -0.0011,2.56e-4 -0.0016,5.29e-4 -5.029224,1.880872 -12.397695,3.45612 -20.670057,3.45612 -8.264897,0 -15.627714,-1.572329 -20.656618,-3.450953 L 17.564302,117.48552 c 2.1324,1.43301 4.326742,2.69616 6.506063,3.78582 C 35.852716,127.16253 49.781637,130 65.000166,130 c 15.218531,0 29.14693,-2.83747 40.929284,-8.72866 11.78223,-5.89111 24.07011,-16.68759 24.07037,-33.452735 0,-16.765449 -12.28802,-27.562074 -24.07037,-33.453254 C 94.216102,48.50868 80.381159,45.671283 65.266815,45.638236 h -0.266649 v -0.0016 c -8.273058,0 -15.642865,-1.574006 -20.672124,-3.455088 5.3e-4,-1.85e-4 0.0011,-2.65e-4 0.0016,-5.29e-4 5.029224,-1.880873 12.398211,-3.456636 20.670573,-3.456636 8.224482,0 15.553152,1.558163 20.580138,3.424597 L 112.3735,12.4723 C 110.26056,11.056661 108.08756,9.8073956 105.92945,8.7283427 94.147096,2.837162 80.218697,1.937e-4 65.000166,1.937e-4 Z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:38.72479248;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
