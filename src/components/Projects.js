@@ -17,7 +17,7 @@ const SPACEPROJECT = {
     name: "Pixtronauts",
     color: "cyan",
     href: "https://pixtronauts.netlify.app/",
-    text: "A continual work-in-progess, this JavaScript-based browser game allows you to explore the planets of this cute pixel universe.",
+    text: "A continual work-in-progess, this JavaScript-based experience allows you to explore the planets of this cute pixel universe.",
     isPicOnLeft: false,
     imgSrc: "/planemo-12px-cloudy.png",
     imgWidth: "100px",
