@@ -37,7 +37,7 @@ function RenderText() {
                     <b>Location:</b> <span className="text-nowrap">Minneapolis, MN, USA</span>
                 </li>
                 <li>
-                    <b>Pronouns:</b> <span className="text-nowrap">they/them or she/her</span>
+                    <b>Pronouns:</b> <span className="text-nowrap">they/them</span>
                 </li>
                 <li>
                     <b>Pet:</b> <span className="text-nowrap">Lily the rabbit</span>
